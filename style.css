@@ -139,9 +139,7 @@ input[type="submit"], .top-footer__link {
     justify-content: space-between;
     align-items: center;
 }
-.header__logo {
 
-}
 .header__nav {
     font-size: .8rem;
     line-height: 0.95rem;
@@ -159,8 +157,6 @@ input[type="submit"], .top-footer__link {
     border-bottom: 2px solid transparent;
     transition: all .5s ease-in-out;
 }
-.nav-header__link {
-}
 .nav-header__item-active {
     border-bottom: 2px solid #5454D4;
 }
@@ -170,8 +166,6 @@ input[type="submit"], .top-footer__link {
     position: fixed;
     bottom: 22px;
     right: 5.5%;
-}
-.socials__list {
 }
 .socials__item + .socials__item{
     margin-top: 12px;
@@ -192,12 +186,12 @@ input[type="submit"], .top-footer__link {
 /* intro Section */
 .intro {
     background-image: url(images/intro-bg.jpg);
-    background-position: center bottom -46px;
+    background-position: center bottom -30px;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 978px;
     position: relative;
-    padding: 275px 0 130px;
+    padding: 275px 0 150px;
 }
   
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
@@ -208,18 +202,9 @@ only screen and (min-width : 1440px) {
     .intro {
       background-image: url(images/intro-bg@2x.jpg);
     }
-  }
-.intro__wrapper {
-}
-.intro__content {
-   
-}
-.intro__title {
 }
 .intro__form {
     margin-top: 75px;
-}
-.form-intro {
 }
 .form-intro__text {
     opacity: .7;
@@ -246,11 +231,8 @@ only screen and (min-width : 1440px) {
     border-radius: 50%;
     border: 1px solid rgba(231, 231, 231, .3);
     cursor: pointer;
-    position: absolute;
-    bottom: 130px;
-    left: 50%;
-    transform: translateX(-50%);
     transition: all .5s ease-in-out;
+    margin: 125px auto 0;
 }
 
 /* Video Section */
@@ -281,9 +263,7 @@ only screen and (min-width : 1440px) {
 
 /* Team Section */
 .team {
-    margin: 39px 0 63px;
-}
-.team__wrapper {
+    margin: 19px 0 63px;
 }
 .team__title {
     color: #1C1F83;
@@ -340,8 +320,6 @@ only screen and (min-width : 1440px) {
     margin-top: 32px;
     display: flex;
 }
-.contact-item {
-}
 .contact-item__link {
     width: 43px;
     height: 23px;
@@ -356,27 +334,17 @@ only screen and (min-width : 1440px) {
 .contact-item__link + .contact-item__link{
     margin-left: 6px;
 }
-.fab {
-}
-.fa-facebook-f {
-}
-.fa-linkedin-in {
-}
 
 /* Contact Section */
 .contact {
     background: #252B42;
     padding: 87px 0 55px;
 }
-.contact__form {
-}
 .form-contact {
     max-width: 400px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
-}
-.form-contact__title {
 }
 .form-contact__text {
     margin-top: 25px;
@@ -438,8 +406,6 @@ only screen and (min-width : 1440px) {
 .footer__top {
     display: flex;
     justify-content: space-between;
-}
-.top-footer {
 }
 .top-footer__contact {
     margin-left: 111px;
@@ -541,15 +507,21 @@ only screen and (min-width : 1440px) {
     background-color: #fff;
 }
 
+@media only screen and (min-width : 1700px){
+    .intro {
+        padding: 275px 0 170px;
+    }
+    .team {
+        margin: 0px 0 63px;
+    }
+}
 @media only screen and (min-width : 1210px){
     .video {
         position: absolute;
         top: 195px;
         right: 3%;
     }
-    .intro__content {
-        max-width: 570px;
-    }
+    
 }
 @media only screen and (min-width : 992px){
     .nav-header__item:hover {
@@ -576,6 +548,9 @@ only screen and (min-width : 1440px) {
     .video:hover .video__btn{
         background-image: url('images/play-button-hover.svg');
     }
+    .intro__title, .intro__form {
+        max-width: 570px;
+    }
 }
 @media only screen and (max-width: 991px){
     .intro {
@@ -586,7 +561,7 @@ only screen and (min-width : 1440px) {
         padding-right: 10px;
     }
     .intro__next-btn {
-        bottom: 208px;
+        margin: 122px auto 0;
     }
     .socials {
         right: .3%;
@@ -659,10 +634,9 @@ only screen and (min-width : 1440px) {
         margin-top: 9px;
     }
     .intro {  
-        padding: 117px 0 207px;
-        background-image: url(images/intro-mob-bg.jpg);
+        padding: 117px 0 133px;
         min-height: 562px;
-        background-position: center bottom -35px;
+        background-position: left 43% bottom 5px;
     }
     h1{
         font-size: 1.2rem;
@@ -687,13 +661,13 @@ only screen and (min-width : 1440px) {
         margin-top: 16px;
     }
     .intro__next-btn {
-        bottom: 139px;
+        margin: 40px auto 0;
         width: 30px;
         height: 30px;
         background-size: 11px;
     }
     .video {
-        margin-top: -53px;
+        margin-top: -48px;
     }
     .team {
         margin: 33px 0 41px;
@@ -789,11 +763,4 @@ only screen and (min-width : 1440px) {
         font-size: 1.2rem;
     }
 }
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5)and (max-width : 767px),
-    only screen and (-moz-min-device-pixel-ratio: 1.5)and (max-width : 767px),
-    only screen and (-o-min-device-pixel-ratio: 3/2)and (max-width : 767px),
-    only screen and (min-device-pixel-ratio: 1.5)and (max-width : 767px){
-        .intro {
-          background-image: url(images/intro-mob-bg@2x.jpg);
-        }
-}
+
