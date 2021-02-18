@@ -521,7 +521,13 @@ only screen and (min-width : 1440px) {
         top: 195px;
         right: 3%;
     }
-    
+    .intro__title, .intro__form {
+        max-width: 570px;
+    }
+}
+@media only screen and (max-width : 1209px){
+.intro {
+    padding: 198px 72px 130px 65px;
 }
 @media only screen and (min-width : 992px){
     .nav-header__item:hover {
@@ -548,14 +554,11 @@ only screen and (min-width : 1440px) {
     .video:hover .video__btn{
         background-image: url('images/play-button-hover.svg');
     }
-    .intro__title, .intro__form {
-        max-width: 570px;
-    }
+    
 }
 @media only screen and (max-width: 991px){
     .intro {
         background-position: left 37% bottom -46px;
-        padding: 198px 72px 130px 65px;
     }
     h1{
         padding-right: 10px;
@@ -682,12 +685,16 @@ only screen and (min-width : 1440px) {
     .team__list {
         margin: 10px -3px;
     }
+    .team__list .slick-track{
+        display: flex;
+    }
     .item-team__name {
         font-size: .8rem;
+        line-height: 1rem;
         margin-top: 7px;
     }
     .item-team__position {
-        margin-top: 1px;
+        margin-top: auto;
     }
     .item-team__descr {
         font-size: .6rem;
@@ -696,12 +703,16 @@ only screen and (min-width : 1440px) {
     }
     .team__item {
         margin: 3px;
+        height: inherit;
+    }
+    .team__item > a{
+        height: 100%;
     }
     .item-team__contact {
         margin-top: 15px;
     }
     .slick-dots {
-        margin-top: -28px;
+        margin-top: 5px;
     }
     .form-contact__text {
         margin-top: 25px;
@@ -717,7 +728,6 @@ only screen and (min-width : 1440px) {
     }
     .footer__top {
         flex-direction: column;
-        
     }
     .top-footer__logo{
         width: 55px;
